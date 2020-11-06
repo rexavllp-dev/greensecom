@@ -205,8 +205,8 @@
             .btn-primary:hover,
             .btn-primary:focus,
             .btn-primary:active:focus {
-                background: #0059bd;
-                border-color: #0059bd;
+                background: #18d944;
+                border-color: #18d944;
             }
 
             .btn-primary.disabled,

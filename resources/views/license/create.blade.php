@@ -155,7 +155,7 @@
         .btn-primary:hover,
         .btn-primary:focus,
         .btn-primary:active:focus {
-            background: #0059bd;
+            background: #18d944;
             outline: 0;
         }
 
