@@ -1,0 +1,12 @@
+.idea/
+.phpintel/
+*.sublime-project
+
+node_modules/
+/vendor/
+/tags
+mix-manifest.json
+npm-debug.log
+yarn-error.log
+*.map
+.env

@@ -1,0 +1,6 @@
+{
+    "name": "Account",
+    "alias": "account",
+    "description": "The GreensIntl Account Module.",
+    "order": 100
+}

@@ -1,0 +1,9 @@
+{
+    "name": "Slider",
+    "alias": "slider",
+    "description": "The GreensIntl Slider Module.",
+    "order": 100,
+    "providers": [
+        "Modules\\Slider\\Providers\\SliderServiceProvider"
+    ]
+}

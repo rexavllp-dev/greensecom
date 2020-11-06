@@ -1,0 +1,6 @@
+{
+    "name": "Wishlist",
+    "alias": "wishlist",
+    "description": "The GreensIntl Wishlist Module.",
+    "order": 100
+}
