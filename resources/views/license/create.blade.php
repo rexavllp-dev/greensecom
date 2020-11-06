@@ -111,7 +111,7 @@
         }
 
         .form-control:focus + .input-icon {
-            color: #0068e1;
+            color: #279540;
         }
 
         .has-error .form-control,
@@ -146,7 +146,7 @@
         }
 
         .btn-primary {
-            background: #0068e1;
+            background: #279540;
             border: none;
             outline: 0;
         }
@@ -251,7 +251,7 @@
             top: 0;
             right: 0;
             height: 80px;
-            background: #0068e1;
+            background: #279540;
             overflow: hidden;
             border-top-left-radius: 3px;
             border-top-right-radius: 3px;
@@ -307,7 +307,7 @@
         .login-wrapper a {
             display: table;
             margin-top: 10px;
-            color: #0068e1;
+            color: #279540;
         }
 
         .login-wrapper a:hover {
@@ -337,7 +337,7 @@
         }
 
         .btn-loading.btn-default:after {
-            border: 2px solid #0068e1;
+            border: 2px solid #279540;
             border-right-color: transparent;
             border-top-color: transparent;
         }

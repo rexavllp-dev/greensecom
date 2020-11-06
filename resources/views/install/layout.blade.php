@@ -123,7 +123,7 @@
 
             .form-control:focus {
                 box-shadow: none;
-                border-color: #0068e1;
+                border-color: #279540;
             }
 
             .help-block {
@@ -196,9 +196,9 @@
             }
 
             .btn-primary {
-                background: #0068e1;
+                background: #279540;
                 color: #ffffff;
-                border-color: #0068e1;
+                border-color: #279540;
             }
 
             .btn-primary:active,
@@ -447,7 +447,7 @@
             }
 
             .btn-loading.btn-default:after {
-                border: 2px solid #0068e1;
+                border: 2px solid #279540;
                 border-right-color: transparent;
                 border-top-color: transparent;
             }

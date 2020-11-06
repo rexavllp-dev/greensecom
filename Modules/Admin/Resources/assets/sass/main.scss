@@ -35,16 +35,16 @@ html {
 
 #nprogress {
     .bar {
-        background: #0068e1;
+        background: #279540;
     }
 
     .peg {
-        box-shadow: 0 0 10px #0068e1, 0 0 5px #0068e1;
+        box-shadow: 0 0 10px #279540, 0 0 5px #279540;
     }
 
     .spinner-icon {
-        border-top-color: #0068e1;
-        border-left-color: #0068e1;
+        border-top-color: #279540;
+        border-left-color: #279540;
     }
 }
 
@@ -149,7 +149,7 @@ html {
 
         > a {
             padding: 10px 15px;
-            color: #0068e1;
+            color: #279540;
             border: none;
             display: block;
             background: transparent !important;
@@ -160,7 +160,7 @@ html {
             }
 
             &:hover, &:focus {
-                color: #0068e1;
+                color: #279540;
             }
         }
 
@@ -172,12 +172,12 @@ html {
     }
 
     > .active {
-        background: #0068e1;
+        background: #279540;
         cursor: default !important;
-        border-color: #0068e1;
+        border-color: #279540;
 
         &:hover {
-            background: #0068e1;
+            background: #279540;
         }
 
         > a {
