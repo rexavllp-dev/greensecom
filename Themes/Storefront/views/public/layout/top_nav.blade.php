@@ -11,7 +11,7 @@
                         <li>
                             <a href="{{ route('contact.create') }}">
                                 <i class="las la-phone"></i>
-                                {{ trans('storefront::layout.contact') }}
+                                {{ trans('storefront::layout.contact') }} Us
                             </a>
                         </li>
 
