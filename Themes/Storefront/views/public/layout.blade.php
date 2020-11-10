@@ -25,6 +25,8 @@
 
         <link rel="shortcut icon" href="{{ $favicon }}" type="image/x-icon">
 
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/css/jquery-ui.css')) }}">
+
         @stack('styles')
 
         {!! setting('custom_header_assets') !!}
