@@ -25,7 +25,7 @@
 
         <link rel="shortcut icon" href="{{ $favicon }}" type="image/x-icon">
 
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/css/jquery-ui.css')) }}">
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/bootstrap.min.css')) }}">
 
         @stack('styles')
 
