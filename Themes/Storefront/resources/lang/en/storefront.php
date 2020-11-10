@@ -25,6 +25,8 @@ return [
         'enable_featured_categories_section' => 'Enable featured categories section',
         'enable_product_tabs_one_section' => 'Enable product tabs one section',
         'enable_brands_section' => 'Enable brands section',
+        'enable_shop_by_treat_section' => 'Enable Shop By Treat section',
+        'enable_baking_essentials_section' => 'Enable Baking Essentials section',
         'enable_flash_sale_and_vertical_products_section' => 'Enable flash sale & vertical products section',
         'enable_two_column_banners_section' => 'Enable two column banners section',
         'enable_product_grid_section' => 'Enable product grid section',
@@ -77,5 +79,9 @@ return [
         'three_column_banners' => 'Three Column Banners',
         'product_tabs_two' => 'Product Tabs Two',
         'one_column_banner' => 'One Column Banner',
+        'shop_by_treat' => 'Shop by Treat',
+        'baking_essentials' => 'Baking Essentials',
+
+
     ],
 ];

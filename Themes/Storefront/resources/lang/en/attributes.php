@@ -42,5 +42,7 @@ return [
     'products_limit' => 'Products Limit',
     'products' => 'Products',
     'storefront_top_brands' => 'Top Brands',
+    'storefront_shop_by_treat' => 'Shop By Treat',
+    'storefront_baking_essentials' => 'Baking Essentials',
     'storefront_active_flash_sale_campaign' => 'Active Campaign',
 ];

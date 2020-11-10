@@ -14,6 +14,7 @@ use Modules\Slider\Entities\Slider;
 use Illuminate\Support\Facades\Cache;
 use Modules\Product\Entities\Product;
 use Modules\FlashSale\Entities\FlashSale;
+use Modules\Category\Entities\Category;
 
 class StorefrontTabs extends Tabs
 {
@@ -46,6 +47,8 @@ class StorefrontTabs extends Tabs
             ->add($this->productGrid())
             ->add($this->threeColumnBanners())
             ->add($this->productTabsTwo())
+            ->add($this->shopByTreat())
+            ->add($this->bakingEssentials())
             ->add($this->oneColumnBanner());
     }
 
@@ -238,6 +241,28 @@ class StorefrontTabs extends Tabs
             $tab->weight(50);
             $tab->view('admin.storefront.tabs.top_brands', [
                 'brands' => Brand::list(),
+            ]);
+        });
+    }
+
+    private function shopByTreat()
+    {
+
+        return tap(new Tab('shop_by_treat', trans('storefront::storefront.tabs.shop_by_treat')), function (Tab $tab) {
+            $tab->weight(50);
+            $tab->view('admin.storefront.tabs.shop_by_treat', [
+                'treats' => Category::treeList(),
+            ]);
+        });
+    }
+    
+        private function bakingEssentials()
+    {
+
+        return tap(new Tab('baking_essentials', trans('storefront::storefront.tabs.baking_essentials')), function (Tab $tab) {
+            $tab->weight(50);
+            $tab->view('admin.storefront.tabs.baking_essentials', [
+                'treats' => Category::treeList(),
             ]);
         });
     }
