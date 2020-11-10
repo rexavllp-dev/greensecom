@@ -27,6 +27,31 @@
 
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/bootstrap.min.css')) }}">
 
+           <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/owl.carousel.min.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/slick.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/magnific-popup.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/font.awesome.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/ionicons.min.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/linearicons.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/animate.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/jquery-ui.min.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/slinky.menu.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/plugins.css')) }}" />
+
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/style.css')) }}" />
+        <link rel="shortcut icon" href="{{ v(Theme::url('public/customtheme/assets/img/favicon.png')) }}">
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/modernizr-3.7.1.min.js')) }}"></script>
+
         @stack('styles')
 
         {!! setting('custom_header_assets') !!}
