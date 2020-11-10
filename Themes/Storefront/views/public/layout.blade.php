@@ -141,5 +141,37 @@
         @stack('scripts')
 
         {!! setting('custom_footer_assets') !!}
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery-3.4.1.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/popper.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/bootstrap.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/owl.carousel.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/slick.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.magnific-popup.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.counterup.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.countdown.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.ui.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.elevatezoom.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/isotope.pkgd.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/slinky.menu.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.instagramFeed.min.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery.ui.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/plugins.js')) }}"></script>
+
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/main.js')) }}"></script>
     </body>
 </html>
