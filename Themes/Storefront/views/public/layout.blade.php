@@ -120,8 +120,15 @@
             --color-primary-transparent-lite: {{ color2rgba($themeColor, 0.3) }};"
     >
         <div class="wrapper" id="app">
+                <div class="off_canvars_overlay"></div>
+
+              <header>
+            <div class="main_header">
             @include('public.layout.top_nav')
             @include('public.layout.header')
+        </div>
+
+    </header>
             @include('public.layout.navigation')
             @include('public.layout.breadcrumb')
 
