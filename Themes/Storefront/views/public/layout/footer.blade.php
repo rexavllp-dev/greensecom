@@ -1,5 +1,4 @@
 
-     
 <div class="shipping_area">
             <div class="container">
                 <div class="row">
@@ -47,7 +46,7 @@
                             </div>
                         </div>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
 
@@ -61,7 +60,13 @@
 
                                     <a href="index.html"><img src="{{url('themes/storefront/public/customtheme/assets/img/logo/logo.png')}}" alt="" /></a>
 
-                                    <a href="index.html"><img src="assets\img\logo\logo.png" alt="" /></a>
+                                    <a href="{{ route('home') }}" class="header-logo">
+                                        @if (is_null($logo))
+                                        <h3>{{ setting('store_name') }}</h3>
+                                        @else
+                                        <img src="{{ $logo }}" alt="logo">
+                                        @endif
+                                    </a>
 
                                 </div>
 
@@ -191,7 +196,7 @@
                         </div>
                         <div class="col-lg-6 col-md-5">
 
-                            
+
 
 
 
@@ -213,7 +218,7 @@
                                             <a href="#"><i class="ion-social-instagram-outline"></i></a>
                                         </li>
 
-                                       
+
                                     </ul>
 
 
