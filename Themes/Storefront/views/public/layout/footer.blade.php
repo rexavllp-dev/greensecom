@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
      
 <div class="shipping_area">
             <div class="container">
@@ -50,8 +50,7 @@
                 </div>   
             </div>
         </div>
-=======
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
         <footer class="footer_widgets mt-60">
             <div class="footer_top">
                 <div class="container">
@@ -59,11 +58,11 @@
                         <div class="col-lg-4 col-md-12 col-sm-7">
                             <div class="widgets_container contact_us">
                                 <div class="footer_logo">
-<<<<<<< HEAD
+
                                     <a href="index.html"><img src="{{url('themes/storefront/public/customtheme/assets/img/logo/logo.png')}}" alt="" /></a>
-=======
+
                                     <a href="index.html"><img src="assets\img\logo\logo.png" alt="" /></a>
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
                                 </div>
 
                                 <p><span>Address:</span> 4710-4890 Breckinridge USA</p>
@@ -73,7 +72,7 @@
                             <div class="footer_payment">
                                         <ul>
                                             <li>
-<<<<<<< HEAD
+
                                                 <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/fb.png')}}" alt="" /></a>
                                             </li>
                                             <li>
@@ -84,7 +83,7 @@
                                             </li>
                                             <li>
                                                 <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/wp.png')}}" alt="" /></a>
-=======
+
                                                 <a href="#"><img src="assets\img\icon\fb.png" alt="" /></a>
                                             </li>
                                             <li>
@@ -95,7 +94,7 @@
                                             </li>
                                             <li>
                                                 <a href="#"><img src="assets\img\icon\wp.png" alt="" /></a>
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
                                             </li>
                                         </ul>
                                     </div>
@@ -149,7 +148,7 @@
                                     <div class="footer_payment">
                                         <ul>
                                             <li>
-<<<<<<< HEAD
+
                                                 <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/paypal1.jpg')}}" alt="" /></a>
                                             </li>
                                             <li>
@@ -160,7 +159,7 @@
                                             </li>
                                             <li>
                                                 <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/paypal4.jpg')}}" alt="" /></a>
-=======
+
                                                 <a href="#"><img src="assets\img\icon\paypal1.jpg" alt="" /></a>
                                             </li>
                                             <li>
@@ -171,7 +170,7 @@
                                             </li>
                                             <li>
                                                 <a href="#"><img src="assets\img\icon\paypal4.jpg" alt="" /></a>
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
                                             </li>
                                         </ul>
                                     </div>
@@ -191,11 +190,11 @@
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5">
-<<<<<<< HEAD
-                            
-=======
 
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+                            
+
+
+
                             <div class="header_social text-right text-white footetrc">
                                     <ul>
                                         <li>
@@ -213,15 +212,14 @@
                                         <li>
                                             <a href="#"><i class="ion-social-instagram-outline"></i></a>
                                         </li>
-<<<<<<< HEAD
+
                                        
                                     </ul>
-                                           
-=======
+
 
                                     </ul>
 
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
                                 </div>
                         </div>
                     </div>
@@ -231,9 +229,8 @@
 
 
 
-<<<<<<< HEAD
+
 <!-- footer theme starts -->
-=======
 
 
 
@@ -245,7 +242,8 @@
 
 
 
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
+
 <!-- <footer class="footer-wrap">
     <div class="container">
         <div class="footer">
@@ -408,9 +406,8 @@
         </div>
     </div>
 </footer>
-<<<<<<< HEAD
+
  -->
  <!-- footer theme ends -->
-=======
- -->
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
+

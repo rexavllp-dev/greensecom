@@ -136,11 +136,11 @@
         {!! setting('custom_footer_assets') !!}
         <script src="{{ v(Theme::url('public/customtheme/assets/js/combined.js')) }}"></script>
 
-<<<<<<< HEAD
+
        <!--  <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
-=======
+
         <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery-3.4.1.min.js')) }}"></script>
->>>>>>> 89a6de3db961985d6e74f5f349d96eabee4e1e7b
+
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/popper.js')) }}"></script>
 
