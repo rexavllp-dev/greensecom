@@ -142,7 +142,7 @@
 
         {!! setting('custom_footer_assets') !!}
 
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery-3.4.1.min.js')) }}"></script>
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/popper.js')) }}"></script>
 
