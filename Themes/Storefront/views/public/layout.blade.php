@@ -48,14 +48,9 @@
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/plugins.css')) }}" />
 
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/style.css')) }}" />
-
         <link rel="shortcut icon" href="{{ v(Theme::url('public/customtheme/assets/img/favicon.png')) }}">
 
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/overwrite.css')) }}" />
-
-
         <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/modernizr-3.7.1.min.js')) }}"></script>
-
 
         @stack('styles')
 
