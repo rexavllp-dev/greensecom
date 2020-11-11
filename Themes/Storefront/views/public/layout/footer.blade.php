@@ -1,4 +1,5 @@
 
+
 <div class="shipping_area">
             <div class="container">
                 <div class="row">
@@ -58,9 +59,7 @@
                             <div class="widgets_container contact_us">
                                 <div class="footer_logo">
 
-                                    <a href="index.html"><img src="{{url('themes/storefront/public/customtheme/assets/img/logo/logo.png')}}" alt="" /></a>
-
-                                    <a href="{{ route('home') }}" class="header-logo">
+                                   <a href="{{ route('home') }}" class="header-logo">
                                         @if (is_null($logo))
                                         <h3>{{ setting('store_name') }}</h3>
                                         @else
