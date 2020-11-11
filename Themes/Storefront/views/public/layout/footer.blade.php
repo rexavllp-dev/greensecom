@@ -103,36 +103,42 @@
                                         </ul>
                                     </div>
                         </div>
+                        @if ($footerMenuOne->isNotEmpty())
                         <div class="col-lg-2 col-md-3 col-sm-5 col-6">
                             <div class="widgets_container widget_menu">
-                                <h3>Information</h3>
+                                <h3>{{ setting('storefront_footer_menu_one_title') }}</h3>
                                 <div class="footer_menu">
                                     <ul>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li><a href="#">Delivery Information</a></li>
-                                        <li><a href="#"> Privacy Policy</a></li>
-                                        <li><a href="#"> Terms & Conditions</a></li>
-                                        <li><a href="contact.html"> Contact Us</a></li>
-                                        <li><a href="#"> Site Map</a></li>
+                                        @foreach ($footerMenuOne as $menuItem)
+                                        <li><a href="{{ $menuItem->url() }}" target="{{ $menuItem->target }}">
+                                                {{ $menuItem->name }}
+                                            </a></li>
+                                         @endforeach
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        @endif
+
+                        @if ($footerMenuTwo->isNotEmpty())
                         <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                             <div class="widgets_container widget_menu">
-                                <h3>Extras</h3>
+                                <h3>{{ setting('storefront_footer_menu_two_title') }}</h3>
                                 <div class="footer_menu">
                                     <ul>
-                                        <li><a href="#">Brands</a></li>
-                                        <li><a href="#"> Gift Vouchers</a></li>
-                                        <li><a href="#">Login/Register</a></li>
-                                        <li><a href="#">My Account</a></li>
-                                        <li><a href="#">Returns</a></li>
-                                        <li><a href="#"> Order History</a></li>
+                                        @foreach ($footerMenuTwo as $menuItem)
+                                        <li><a href="{{ $menuItem->url() }}" target="{{ $menuItem->target }}">
+                                                {{ $menuItem->name }}
+                                            </a></li>
+                                        @endforeach
+
                                     </ul>
                                 </div>
                             </div>
                         </div>
+                        @endif
+
                         <div class="col-lg-4 col-md-6 col-sm-8">
                             <div class="widgets_container widget_newsletter">
                                 <h3>Sign up newsletter</h3>
