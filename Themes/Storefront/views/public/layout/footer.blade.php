@@ -1,4 +1,154 @@
-<footer class="footer-wrap">
+        <footer class="footer_widgets mt-60">
+            <div class="footer_top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-7">
+                            <div class="widgets_container contact_us">
+                                <div class="footer_logo">
+                                    <a href="index.html"><img src="assets\img\logo\logo.png" alt="" /></a>
+                                </div>
+
+                                <p><span>Address:</span> 4710-4890 Breckinridge USA</p>
+                                <p><span>Email:</span> <a href="#">demo@hasthemes.com</a></p>
+                                <p><span>Call us:</span> <a href="tel:(08)23456789">(08) 23 456 789</a></p>
+                            </div>
+                            <div class="footer_payment">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\fb.png" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\in.png" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\insta-2.png" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\wp.png" alt="" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-5 col-6">
+                            <div class="widgets_container widget_menu">
+                                <h3>Information</h3>
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="#">Delivery Information</a></li>
+                                        <li><a href="#"> Privacy Policy</a></li>
+                                        <li><a href="#"> Terms & Conditions</a></li>
+                                        <li><a href="contact.html"> Contact Us</a></li>
+                                        <li><a href="#"> Site Map</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                            <div class="widgets_container widget_menu">
+                                <h3>Extras</h3>
+                                <div class="footer_menu">
+                                    <ul>
+                                        <li><a href="#">Brands</a></li>
+                                        <li><a href="#"> Gift Vouchers</a></li>
+                                        <li><a href="#">Login/Register</a></li>
+                                        <li><a href="#">My Account</a></li>
+                                        <li><a href="#">Returns</a></li>
+                                        <li><a href="#"> Order History</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-8">
+                            <div class="widgets_container widget_newsletter">
+                                <h3>Sign up newsletter</h3>
+                                <p class="footer_desc">Get updates by subscribe our weekly newsletter</p>
+                                <div class="subscribe_form">
+                                    <form id="mc-form" class="mc-form footer-newsletter">
+                                        <input id="mc-email" type="email" autocomplete="off" placeholder="Enter you email" />
+                                        <button id="mc-submit">Subscribe</button>
+                                    </form>
+
+                                    <div class="mailchimp-alerts text-centre">
+                                        <div class="mailchimp-submitting"></div>
+                                        <div class="mailchimp-success"></div>
+                                        <div class="mailchimp-error"></div>
+                                    </div>
+
+                                    <div class="footer_payment">
+                                        <ul>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\paypal1.jpg" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\paypal2.jpg" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\paypal3.jpg" alt="" /></a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><img src="assets\img\icon\paypal4.jpg" alt="" /></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-7">
+                            <div class="copyright_area">
+                                <p>Copyright © 2020 <a href="#">Greens International</a> . All Rights Reserved.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-5">
+
+                            <div class="header_social text-right text-white footetrc">
+                                    <ul>
+                                        <li>
+                                            <a href="#"><i class="ion-social-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ion-social-googleplus-outline"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ion-social-youtube-outline"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ion-social-facebook"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="#"><i class="ion-social-instagram-outline"></i></a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <footer class="footer-wrap">
     <div class="container">
         <div class="footer">
             <div class="footer-top">
@@ -160,3 +310,4 @@
         </div>
     </div>
 </footer>
+ -->
