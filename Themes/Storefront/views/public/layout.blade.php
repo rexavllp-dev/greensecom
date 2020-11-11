@@ -25,33 +25,12 @@
 
         <link rel="shortcut icon" href="{{ $favicon }}" type="image/x-icon">
 
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/bootstrap.min.css')) }}">
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/combined.css')) }}">
 
-           <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/owl.carousel.min.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/slick.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/magnific-popup.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/font.awesome.css')) }}" />
+         
 
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/ionicons.min.css')) }}" />
 
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/linearicons.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/animate.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/jquery-ui.min.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/slinky.menu.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/plugins.css')) }}" />
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/style.css')) }}" />
-
-        <link rel="shortcut icon" href="{{ v(Theme::url('public/customtheme/assets/img/favicon.png')) }}">
-
-        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/overwrite.css')) }}" />
 
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/modernizr-3.7.1.min.js')) }}"></script>
@@ -119,32 +98,34 @@
             --color-primary-transparent: {{ color2rgba($themeColor, 0.8) }};
             --color-primary-transparent-lite: {{ color2rgba($themeColor, 0.3) }};"
     >
-        <div class="wrapper" id="app">
+       
                 <div class="off_canvars_overlay"></div>
+                @include('public.layout.top_nav_mob')
 
               <header>
             <div class="main_header">
             @include('public.layout.top_nav')
-            @include('public.layout.header')
+            @include('public.layout.navigation')
+           
         </div>
 
     </header>
-            @include('public.layout.navigation')
+           <!--  
             @include('public.layout.breadcrumb')
 
             @yield('content')
 
-            @include('public.home.sections.subscribe')
+            @include('public.home.sections.subscribe') -->
             @include('public.layout.footer')
 
-            <div class="overlay"></div>
+           <!--  <div class="overlay"></div>
 
             @include('public.layout.sidebar_menu')
             @include('public.layout.sidebar_cart')
             @include('public.layout.alert')
             @include('public.layout.newsletter_popup')
             @include('public.layout.cookie_bar')
-        </div>
+        </div> -->
 
         @stack('pre-scripts')
 
@@ -153,8 +134,9 @@
         @stack('scripts')
 
         {!! setting('custom_footer_assets') !!}
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/combined.js')) }}"></script>
 
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
+       <!--  <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/popper.js')) }}"></script>
 
@@ -184,6 +166,6 @@
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/plugins.js')) }}"></script>
 
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/main.js')) }}"></script>
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/main.js')) }}"></script> -->
     </body>
 </html>

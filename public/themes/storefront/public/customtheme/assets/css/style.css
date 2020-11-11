@@ -572,6 +572,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .canvas_open {
     left: 14px;
     top: 32px;
+      width: 15px
   }
 }
 .canvas_open a {
@@ -1093,7 +1094,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   .search_box {
     border: 1px solid #ededed;
     border-radius: 6px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
   }
 }
 .search_box input::-webkit-input-placeholder {
