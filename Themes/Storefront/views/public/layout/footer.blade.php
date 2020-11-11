@@ -68,10 +68,15 @@
                                     </a>
 
                                 </div>
-
-                                <p><span>Address:</span> 4710-4890 Breckinridge USA</p>
-                                <p><span>Email:</span> <a href="#">demo@hasthemes.com</a></p>
-                                <p><span>Call us:</span> <a href="tel:(08)23456789">(08) 23 456 789</a></p>
+                                @if (setting('storefront_address'))
+                                <p><span>Address:</span> {{ setting('storefront_address') }}</p>
+                                @endif
+                                @if (setting('store_email'))
+                                <p><span>Email:</span> <a href="mailto:{{ setting('store_email') }}">{{ setting('store_email') }}</a></p>
+                                @endif
+                                @if (setting('store_phone'))
+                                <p><span>Call us:</span> <a href="tel:{{ setting('store_phone') }}">{{ setting('store_phone') }}</a></p>
+                                @endif
                             </div>
                             <div class="footer_payment">
                                         <ul>
