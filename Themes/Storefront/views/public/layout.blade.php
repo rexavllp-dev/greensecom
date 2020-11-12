@@ -33,6 +33,8 @@
 
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/ionicons.min.css')) }}" />
 
+        <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/overwrite.css')) }}" />
+
 
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/modernizr-3.7.1.min.js')) }}"></script>
