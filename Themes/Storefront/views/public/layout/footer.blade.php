@@ -173,13 +173,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6 col-md-7">
                             <div class="copyright_area">
-                                <p>                             @foreach ($footerTags as $footerTag)
-                                        <li>
-                                            <a href="{{ $footerTag->url() }}">
-                                                {{ $footerTag->name }}
-                                            </a>
-                                        </li>
-                                    @endforeach</p>
+                                <p>Copyright © 2020 <a href="#">Greens International</a> . All Rights Reserved.</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-5">
