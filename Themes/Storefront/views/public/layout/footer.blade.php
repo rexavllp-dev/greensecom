@@ -78,35 +78,6 @@
                                 <p><span>Call us:</span> <a href="tel:{{ setting('store_phone') }}">{{ setting('store_phone') }}</a></p>
                                 @endif
                             </div>
-                            <div class="footer_payment">
-                                        <ul>
-                                            <li>
-
-                                                <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/fb.png')}}" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/in.png')}}" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/insta-2.png')}}" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="{{url('themes/storefront/public/customtheme/assets/img/icon/wp.png')}}" alt="" /></a>
-
-                                                <a href="#"><img src="assets\img\icon\fb.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="assets\img\icon\in.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="assets\img\icon\insta-2.png" alt="" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="assets\img\icon\wp.png" alt="" /></a>
-
-                                            </li>
-                                        </ul>
-                                    </div>
                         </div>
                         @if ($footerMenuOne->isNotEmpty())
                         <div class="col-lg-2 col-md-3 col-sm-5 col-6">
@@ -160,7 +131,10 @@
                                         <div class="mailchimp-error"></div>
                                     </div>
 
-                                    <div class="footer_payment">
+
+                                </div>
+                            </div>
+                                                                <div class="footer_payment">
                                         <ul>
                                             <li>
 
@@ -189,8 +163,6 @@
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -211,31 +183,18 @@
 
 
                             <div class="header_social text-right text-white footetrc">
-                                    <ul>
+                            @if (social_links()->isNotEmpty())
+                                <ul class="list-inline social-links">
+                                    @foreach (social_links() as $icon => $socialLink)
                                         <li>
-                                            <a href="#"><i class="ion-social-twitter"></i></a>
+                                            <a href="{{ $socialLink }}">
+                                                <i class="{{ $icon }}"></i>
+                                            </a>
                                         </li>
-                                        <li>
-                                            <a href="#"><i class="ion-social-googleplus-outline"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="ion-social-youtube-outline"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="ion-social-facebook"></i></a>
-                                        </li>
-                                        <li>
-                                            <a href="#"><i class="ion-social-instagram-outline"></i></a>
-                                        </li>
-
-
-                                    </ul>
-
-
-                                    </ul>
-
-
-                                </div>
+                                    @endforeach
+                                </ul>
+                            @endif
+                            </div>
                         </div>
                     </div>
                 </div>

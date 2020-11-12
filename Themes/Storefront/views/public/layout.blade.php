@@ -29,7 +29,7 @@
 
 
 
-         
+
 
         <link rel="stylesheet" href="{{ v(Theme::url('public/customtheme/assets/css/ionicons.min.css')) }}" />
 
@@ -100,34 +100,25 @@
             --color-primary-transparent: {{ color2rgba($themeColor, 0.8) }};
             --color-primary-transparent-lite: {{ color2rgba($themeColor, 0.3) }};"
     >
-       
-                <div class="off_canvars_overlay"></div>
-                @include('public.layout.top_nav_mob')
-
-              <header>
-            <div class="main_header">
+        <div class="wrapper" id="app">
             @include('public.layout.top_nav')
+            @include('public.layout.header')
             @include('public.layout.navigation')
-           
-        </div>
-
-    </header>
-           <!--  
             @include('public.layout.breadcrumb')
 
             @yield('content')
 
-            @include('public.home.sections.subscribe') -->
+            @include('public.home.sections.subscribe')
             @include('public.layout.footer')
 
-           <!--  <div class="overlay"></div>
+            <div class="overlay"></div>
 
             @include('public.layout.sidebar_menu')
             @include('public.layout.sidebar_cart')
             @include('public.layout.alert')
             @include('public.layout.newsletter_popup')
             @include('public.layout.cookie_bar')
-        </div> -->
+        </div>
 
         @stack('pre-scripts')
 
