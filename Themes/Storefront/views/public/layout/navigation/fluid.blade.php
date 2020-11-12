@@ -1,31 +1,35 @@
-<ul
-    class="list-inline fluid-menu-wrap"
 
-    @if ($menu->hasBackgroundImage())
-        style="background-image: url({{ $menu->backgroundImage() }});"
-    @endif
->
-    <li>
-        <div class="fluid-menu-content">
-            @foreach ($subMenus as $subMenu)
-                <div class="fluid-menu-list">
-                    <h5 class="fluid-menu-title">
-                        <a href="{{ $subMenu->url() }}" target="{{ $subMenu->target() }}">
+
+<ul class="sub_menu" style="width: 1140px;background-image: url({{ $menu->backgroundImage() }});background-position: center;">
+    <div class="container">
+        <div class="row">
+                        @foreach ($subMenus as $subMenu)
+            <div class="col-md-3">
+                <h4  style="margin-top: 10px;"><a href="{{ $subMenu->url() }}" target="{{ $subMenu->target() }}">
                             {{ $subMenu->name() }}
-                        </a>
-                    </h5>
-
-                    <ul class="list-inline fluid-sub-menu-list">
-                        @foreach ($subMenu->items() as $item)
-                            <li>
-                                <a href="{{ $item->url() }}" target="{{ $subMenu->target() }}">
+                        </a></h4>
+                @foreach ($subMenu->items() as $item)
+                <li><a href="{{ $item->url() }}" target="{{ $subMenu->target() }}">
                                     {{ $item->name() }}
-                                </a>
-                            </li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endforeach
+                                </a></li>
+                @endforeach
+
+            </div>
+        @endforeach
         </div>
-    </li>
+    </div>
 </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

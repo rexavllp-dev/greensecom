@@ -22272,7 +22272,7 @@ textarea.form-control {
     flex-wrap: wrap;
 }
 .horizontal-megamenu.mega-menu > .fluid-menu {
-    position: relative;
+    position: initial;
 }
 .horizontal-megamenu > .nav-item:hover > .nav-link {
     font-weight: 500;
