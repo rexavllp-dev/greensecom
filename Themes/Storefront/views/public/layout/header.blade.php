@@ -93,9 +93,21 @@
             <div class="col-lg-2 col-md-6 col-sm-7 col-10">
                 <div class="header_social text-right d-none d-sm-block">
                     <ul>
-                        <li><a href="login.html" style="font-size: 14px;"><i class="lnr lnr-user"></i> Register</a></li>
-                        <li style="margin-left: -13px;"><span>/</span></li>
-                        <li><a href="login.html" style="font-size: 14px;margin-left: -16px;"><i class="lnr lnr-lock"></i> Login</a></li>
+                        @auth
+                            <li>
+                                <a href="{{ route('account.dashboard.index') }}">
+                                    <i class="las la-user"></i>
+                                    {{ trans('storefront::layout.account') }}
+                                </a>
+                            </li>
+                        @else
+                            <li>
+                                <a href="{{ route('login') }}">
+                                    <i class="las la-sign-in-alt"></i>
+                                    {{ trans('storefront::layout.login') }}
+                                </a>
+                            </li>
+                        @endauth
                     </ul>
                 </div>
             </div>
