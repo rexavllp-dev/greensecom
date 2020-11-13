@@ -24,24 +24,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="header_account_list header_wishlist d-block d-sm-none">
-                    <a href="wishlist.html"><span class="lnr lnr-magnifier"></span></a>
-                </div>-->
             </div>
         </div>
     </div>
 </div>
-</div>
-<!-- start navigation theme -->
-<!-- <section class="navigation-wrap">
-<div class="container">
-    <div class="navigation-inner">
-        @include('public.layout.navigation.category_menu')
-        @include('public.layout.navigation.primary_menu')
-        <span class="navigation-text">
-            {{ setting('storefront_navbar_text') }}
-        </span>
-    </div>
-</div>
-</section> -->
-<!-- end navigation theme -->
