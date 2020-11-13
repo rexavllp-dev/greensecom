@@ -42421,6 +42421,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['banner']
 });
@@ -42591,8 +42599,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ProductCard.vue */ "./Themes/Storefront/resources/assets/public/js/components/ProductCard.vue");
 /* harmony import */ var _mixins_DynamicTabsMixin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../mixins/DynamicTabsMixin */ "./Themes/Storefront/resources/assets/public/js/mixins/DynamicTabsMixin.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../functions */ "./Themes/Storefront/resources/assets/public/js/functions.js");
-//
-//
 //
 //
 //
@@ -45831,8 +45837,10 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "banner-wrap one-column-banner" }, [
-    _c("div", { staticClass: "container" }, [
+  return _c("div", [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", [
       _c(
         "a",
         {
@@ -45847,7 +45855,18 @@ var render = function() {
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "section_title" }, [
+        _c("h2", { staticClass: "head-stripe" }, [_vm._v("DEALS")])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -46121,64 +46140,44 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "section",
-    { staticClass: "featured-categories-wrap" },
+    "div",
+    { staticClass: "banner_area banner_gallery2" },
     [
       _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "featured-categories-header" }, [
-          _c("div", { staticClass: "featured-categories-text" }, [
-            _c("h2", { staticClass: "title" }, [
-              _vm._v(_vm._s(_vm.data.title))
-            ]),
-            _vm._v(" "),
-            _c("span", { staticClass: "excerpt" }, [
-              _vm._v(_vm._s(_vm.data.subtitle))
-            ])
-          ]),
-          _vm._v(" "),
-          _c(
-            "ul",
-            { staticClass: "tabs featured-categories-tabs" },
-            _vm._l(_vm.tabs, function(tab, index) {
-              return _c(
-                "li",
-                {
-                  key: index,
-                  class: _vm.classes(tab),
-                  on: {
-                    click: function($event) {
-                      return _vm.change(tab)
-                    }
-                  }
-                },
-                [
-                  _c("div", { staticClass: "featured-category-image" }, [
-                    _c("img", {
-                      class: { "image-placeholder": !tab.hasLogo },
-                      attrs: { src: tab.logo, alt: "category logo" }
-                    })
-                  ]),
-                  _vm._v(" "),
-                  _c("span", { staticClass: "featured-category-name" }, [
-                    _vm._v(_vm._s(tab.label))
-                  ])
-                ]
-              )
-            }),
-            0
-          )
-        ]),
+        _vm._m(0),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "tab-content featured-category-products" },
-          _vm._l(_vm.products, function(product) {
-            return _c("ProductCard", {
-              key: product.id,
-              attrs: { product: product }
-            })
+          { staticClass: "row" },
+          _vm._l(_vm.tabs, function(tab, index) {
+            return _c(
+              "div",
+              {
+                key: index,
+                staticClass: "col-lg-3 col-md-3 col-6",
+                class: _vm.classes(tab),
+                staticStyle: { "padding-left": "2px", "padding-right": "2px" },
+                on: {
+                  click: function($event) {
+                    return _vm.change(tab)
+                  }
+                }
+              },
+              [
+                _c("div", { staticClass: "banner2_sidebar" }, [
+                  _c("div", { staticClass: "banner_thumb mb-1" }, [
+                    _c("a", { attrs: { href: "shop.html" } }, [
+                      _c("img", {
+                        class: { "image-placeholder": !tab.hasLogo },
+                        attrs: { src: tab.logo, alt: "category logo" }
+                      })
+                    ])
+                  ])
+                ])
+              ]
+            )
           }),
-          1
+          0
         )
       ]),
       _vm._v(" "),
@@ -46198,7 +46197,16 @@ var render = function() {
     2
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "section_title" }, [
+      _c("h2", { staticClass: "head-stripe" }, [_vm._v("BAKING ESSENTIALS")])
+    ])
+  }
+]
 render._withStripped = true
 
 
@@ -46789,21 +46797,28 @@ var staticRenderFns = [
     return _c("div", { staticClass: "row" }, [
       _c(
         "div",
-        { staticClass: "col-12", staticStyle: { "margin-top": "35px" } },
+        { staticClass: "col-12", staticStyle: { "margin-top": "0px" } },
         [
           _c(
             "a",
             {
+              staticClass: "buttonseemore",
               staticStyle: {
-                padding: "15px",
-                "font-size": "18px",
+                padding: "7px",
+                "font-size": "11px",
                 "border-radius": "20px",
                 "font-weight": "500",
                 float: "right"
               },
               attrs: { href: "brands" }
             },
-            [_vm._v("See More")]
+            [
+              _vm._v("See More "),
+              _c("span", {
+                staticClass: "lnr lnr-arrow-right",
+                staticStyle: { color: "#26953f" }
+              })
+            ]
           )
         ]
       )

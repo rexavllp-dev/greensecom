@@ -1,34 +1,30 @@
 <template>
-    <section class="featured-categories-wrap">
+  <div class="banner_area banner_gallery2">
         <div class="container">
-            <div class="featured-categories-header">
-                <div class="featured-categories-text">
-                    <h2 class="title">{{ data.title }}</h2>
-                    <span class="excerpt">{{ data.subtitle }}</span>
-                </div>
+             <div class="section_title">
+        <h2 class="head-stripe">BAKING ESSENTIALS</h2>
+    </div>
+            <div class="row">
 
-                <ul class="tabs featured-categories-tabs">
-                    <li
-                        v-for="(tab, index) in tabs"
+                    <div class="col-lg-3 col-md-3 col-6" style="padding-left: 2px;padding-right: 2px"
+                    v-for="(tab, index) in tabs"
                         :key="index"
                         :class="classes(tab)"
-                        @click="change(tab)"
-                    >
-                        <div class="featured-category-image">
-                            <img :src="tab.logo" :class="{ 'image-placeholder': ! tab.hasLogo }" alt="category logo">
+                        @click="change(tab)">
+                    <div class="banner2_sidebar">
+                        <div class="banner_thumb mb-1">
+                            <a href="shop.html"><img :src="tab.logo" :class="{ 'image-placeholder': ! tab.hasLogo }" alt="category logo"></a> 
                         </div>
-
-                        <span class="featured-category-name">{{ tab.label }}</span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+               
+         
+               
+             
             </div>
-
-            <div class="tab-content featured-category-products">
-                <ProductCard v-for="product in products" :key="product.id" :product="product"/>
-            </div>
+        
         </div>
-
-        <dynamic-tab
+         <dynamic-tab
             v-for="(category, index) in data.categories"
             :key="index"
             :label="category.name"
@@ -36,7 +32,9 @@
             :url="route('storefront.featured_category_products.index', { categoryNumber: index + 1 })"
         >
         </dynamic-tab>
-    </section>
+    </div>
+
+
 </template>
 
 <script>

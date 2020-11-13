@@ -9,7 +9,7 @@
         <home-features :features="{{ json_encode($features) }}"></home-features>
     @endif
 
-    @if (setting('storefront_featured_categories_section_enabled'))
+    @if (setting('storefront_baking_essentials_section_enabled'))
         <featured-categories :data="{{ json_encode($featuredCategories) }}"></featured-categories>
     @endif
 
