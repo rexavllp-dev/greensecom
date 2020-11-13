@@ -52,4 +52,23 @@
     background: #fff !important;
 
 }
+.buttonseemore {
+    transition: all .5s ease;
+    color: #26953f;
+    border: 2px solid #26953f;
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    line-height: 1;
+    font-size: 12px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+
+}
+.buttonseemore:hover {
+    color: #001F3F;
+    background-color: #26953f;
+    
+}
 

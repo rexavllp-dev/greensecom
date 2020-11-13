@@ -9,11 +9,7 @@
 
             {{ Form::select('storefront_featured_categories_section_category_1_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_1',
-                'products' => $categoryOneProducts,
-                'featuredCategories' => true,
-            ])
+        
         </div>
 
         <div class="box-content clearfix">
@@ -21,11 +17,7 @@
 
             {{ Form::select('storefront_featured_categories_section_category_2_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_2',
-                'products' => $categoryTwoProducts,
-                'featuredCategories' => true,
-            ])
+        
         </div>
 
         <div class="box-content clearfix">
@@ -33,11 +25,7 @@
 
             {{ Form::select('storefront_featured_categories_section_category_3_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_3',
-                'products' => $categoryThreeProducts,
-                'featuredCategories' => true,
-            ])
+         
         </div>
 
         <div class="box-content clearfix">
@@ -45,11 +33,7 @@
 
             {{ Form::select('storefront_featured_categories_section_category_4_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_4',
-                'products' => $categoryFourProducts,
-                'featuredCategories' => true,
-            ])
+         
         </div>
 
         <div class="box-content clearfix">
@@ -57,11 +41,7 @@
 
             {{ Form::select('storefront_featured_categories_section_category_5_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_5',
-                'products' => $categoryFiveProducts,
-                'featuredCategories' => true,
-            ])
+         
         </div>
 
         <div class="box-content clearfix">
@@ -69,11 +49,23 @@
 
             {{ Form::select('storefront_featured_categories_section_category_6_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
 
-            @include('admin.storefront.tabs.partials.products', [
-                'fieldNamePrefix' => 'storefront_featured_categories_section_category_6',
-                'products' => $categorySixProducts,
-                'featuredCategories' => true,
-            ])
+        
+        </div>
+
+           <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_7') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_7_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+        
+        </div>
+
+           <div class="box-content clearfix">
+            <h4 class="section-title">{{ trans('storefront::storefront.form.category_8') }}</h4>
+
+            {{ Form::select('storefront_featured_categories_section_category_8_category_id', trans('storefront::attributes.category'), $errors, $categories, $settings) }}
+
+        
         </div>
     </div>
 </div>

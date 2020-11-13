@@ -443,7 +443,7 @@ new _CategoryForm__WEBPACK_IMPORTED_MODULE_0__["default"]();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\Category\Resources\assets\admin\js\main.js */"./Modules/Category/Resources/assets/admin/js/main.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\Category\Resources\assets\admin\js\main.js */"./Modules/Category/Resources/assets/admin/js/main.js");
 
 
 /***/ })

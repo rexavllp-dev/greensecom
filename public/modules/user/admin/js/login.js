@@ -112,7 +112,7 @@ $('[data-loading]').on('click', function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\User\Resources\assets\admin\js\login.js */"./Modules/User/Resources/assets/admin/js/login.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\User\Resources\assets\admin\js\login.js */"./Modules/User/Resources/assets/admin/js/login.js");
 
 
 /***/ })

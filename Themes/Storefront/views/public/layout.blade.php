@@ -129,12 +129,12 @@
         @stack('scripts')
 
         {!! setting('custom_footer_assets') !!}
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/combined.js')) }}"></script>
+        <!-- <script src="{{ v(Theme::url('public/customtheme/assets/js/combined.js')) }}"></script> -->
 
 
-       <!--  <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
+     <!--    <script src="{{ v(Theme::url('public/customtheme/assets/js/vendor/jquery-3.4.1.min.js')) }}"></script>
 
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery-3.4.1.min.js')) }}"></script>
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/jquery-3.4.1.min.js')) }}"></script> -->
 
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/popper.js')) }}"></script>
@@ -165,6 +165,6 @@
 
         <script src="{{ v(Theme::url('public/customtheme/assets/js/plugins.js')) }}"></script>
 
-        <script src="{{ v(Theme::url('public/customtheme/assets/js/main.js')) }}"></script> -->
+        <script src="{{ v(Theme::url('public/customtheme/assets/js/main.js')) }}"></script>
     </body>
 </html>

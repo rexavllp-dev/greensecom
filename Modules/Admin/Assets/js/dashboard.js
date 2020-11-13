@@ -32368,7 +32368,7 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\Admin\Resources\assets\js\dashboard.js */"./Modules/Admin/Resources/assets/js/dashboard.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\Admin\Resources\assets\js\dashboard.js */"./Modules/Admin/Resources/assets/js/dashboard.js");
 
 
 /***/ })

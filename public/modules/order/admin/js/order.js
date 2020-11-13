@@ -138,7 +138,7 @@ $('#order-status').change(function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\Order\Resources\assets\admin\js\main.js */"./Modules/Order/Resources/assets/admin/js/main.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\Order\Resources\assets\admin\js\main.js */"./Modules/Order/Resources/assets/admin/js/main.js");
 
 
 /***/ })

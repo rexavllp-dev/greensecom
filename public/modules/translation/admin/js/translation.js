@@ -7012,7 +7012,7 @@ Automatically shown in inline mode.
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\Translation\Resources\assets\admin\js\main.js */"./Modules/Translation/Resources/assets/admin/js/main.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\Translation\Resources\assets\admin\js\main.js */"./Modules/Translation/Resources/assets/admin/js/main.js");
 
 
 /***/ })

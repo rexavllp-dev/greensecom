@@ -45,6 +45,8 @@ return [
         'category_4' => 'Category 4',
         'category_5' => 'Category 5',
         'category_6' => 'Category 6',
+         'category_7' => 'Category 7',
+          'category_8' => 'Category 8',
         'tab_1' => 'Tab 1',
         'tab_2' => 'Tab 2',
         'tab_3' => 'Tab 3',

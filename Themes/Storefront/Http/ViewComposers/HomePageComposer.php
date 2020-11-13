@@ -51,12 +51,18 @@ class HomePageComposer
     }
 
     private function getFeaturedCategories()
-    {
-        $categoryIds = Collection::times(6, function ($number) {
-            if (! is_null(setting("storefront_featured_categories_section_category_{$number}_product_type"))) {
+    {   
+
+        $arr = array();
+
+        $categoryIds = Collection::times(8, function ($number) {
+           /* if (! is_null(setting("storefront_featured_categories_section_category_{$number}_product_type"))) {*/
                 return setting("storefront_featured_categories_section_category_{$number}_category_id");
-            }
+            /*}*/
         })->filter();
+
+        // dd($categoryIds);
+        
 
         return Category::with('files')
             ->whereIn('id', $categoryIds)

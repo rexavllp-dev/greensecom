@@ -148,7 +148,7 @@ $('.product-type').on('change', function (e) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Themes\Storefront\resources\assets\admin\js\main.js */"./Themes/Storefront/resources/assets/admin/js/main.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Themes\Storefront\resources\assets\admin\js\main.js */"./Themes/Storefront/resources/assets/admin/js/main.js");
 
 
 /***/ })

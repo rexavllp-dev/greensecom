@@ -20,6 +20,8 @@ class SaveStorefrontRequest extends Request
         'storefront_featured_categories_section_category_4_products',
         'storefront_featured_categories_section_category_5_products',
         'storefront_featured_categories_section_category_6_products',
+        'storefront_featured_categories_section_category_7_products',
+        'storefront_featured_categories_section_category_8_products',
         'storefront_product_tabs_1_section_tab_1_products',
         'storefront_product_tabs_1_section_tab_2_products',
         'storefront_product_tabs_1_section_tab_3_products',

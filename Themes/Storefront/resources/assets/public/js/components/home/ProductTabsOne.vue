@@ -1,7 +1,12 @@
 <template>
     <section class="landscape-tab-products-wrap clearfix">
         <div class="container">
-            <div class="tab-products-header clearfix">
+
+                     <div class="section_title">
+                        <h2 class="head-stripe">TRENDING NOW</h2>
+
+            </div> 
+<!--             <div class="tab-products-header clearfix">
                 <ul class="tabs float-left">
                     <li
                         v-for="(tab, index) in tabs"
@@ -12,7 +17,7 @@
                         {{ tab.label }}
                     </li>
                 </ul>
-            </div>
+            </div> -->
 
             <div class="tab-content landscape-left-tab-products">
                 <ProductCard v-for="product in products" :key="product.id" :product="product"/>

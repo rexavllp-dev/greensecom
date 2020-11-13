@@ -165,7 +165,7 @@ new _ProductForm__WEBPACK_IMPORTED_MODULE_0__["default"]();
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\wamp64\www\github\greensecom\Modules\Product\Resources\assets\admin\js\main.js */"./Modules/Product/Resources/assets/admin/js/main.js");
+module.exports = __webpack_require__(/*! D:\Office_Files\www\github\greensecom\Modules\Product\Resources\assets\admin\js\main.js */"./Modules/Product/Resources/assets/admin/js/main.js");
 
 
 /***/ })

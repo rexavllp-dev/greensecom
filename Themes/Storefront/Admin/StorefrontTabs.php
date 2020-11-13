@@ -214,6 +214,8 @@ class StorefrontTabs extends Tabs
                 'categoryFourProducts' => $this->getProductListFromSetting('storefront_featured_categories_section_category_4_products'),
                 'categoryFiveProducts' => $this->getProductListFromSetting('storefront_featured_categories_section_category_5_products'),
                 'categorySixProducts' => $this->getProductListFromSetting('storefront_featured_categories_section_category_6_products'),
+                'categorySevenProducts' => $this->getProductListFromSetting('storefront_featured_categories_section_category_7_products'),
+                'categoryEightProducts' => $this->getProductListFromSetting('storefront_featured_categories_section_category_8_products'),
             ]);
         });
     }

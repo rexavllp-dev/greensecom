@@ -22,8 +22,8 @@
             
         </div>
         <div class="row">
-            <div class="col-12" style="margin-top: 35px">
-                <a href="brands" style="padding: 15px; font-size: 18px; border-radius: 20px;font-weight: 500;float: right">See More</a>
+            <div class="col-12" style="margin-top: 0px">
+                <a href="brands" class="buttonseemore" style="padding: 7px; font-size: 11px; border-radius: 20px;font-weight: 500;float: right">See More <span class="lnr lnr-arrow-right" style="color: #26953f" ></span></a>
             </div>
         </div>
     </div>
