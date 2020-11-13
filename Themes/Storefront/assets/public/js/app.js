@@ -43287,6 +43287,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['topBrands']
 });
@@ -46732,31 +46739,35 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("section", { staticClass: "top-brands-wrap clearfix" }, [
-    _vm._m(0),
-    _vm._v(" "),
+  return _c("div", { staticClass: "banner_area banner_gallery2" }, [
     _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
       _c(
         "div",
-        { staticClass: "single_product" },
+        { staticClass: "row" },
         _vm._l(_vm.topBrands, function(topBrand, index) {
-          return _c(
-            "a",
-            {
-              key: index,
-              staticClass: "top-brand-image",
-              attrs: { href: topBrand.url }
-            },
-            [
-              _c("img", {
-                staticStyle: { "padding-right": "57px" },
-                attrs: { src: topBrand.logo.path, alt: "brand logo" }
-              })
-            ]
-          )
+          return _c("div", { key: index, staticClass: "col-md-2 col-6" }, [
+            _c("div", { staticClass: "single_product" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "top-brand-image",
+                  attrs: { href: topBrand.url }
+                },
+                [
+                  _c("img", {
+                    attrs: { src: topBrand.logo.path, alt: "brand logo" }
+                  })
+                ]
+              )
+            ])
+          ])
         }),
         0
-      )
+      ),
+      _vm._v(" "),
+      _vm._m(1)
     ])
   ])
 }
@@ -46769,6 +46780,33 @@ var staticRenderFns = [
       _c("div", { staticClass: "section_title" }, [
         _c("h2", { staticClass: "head-stripe" }, [_vm._v("SHOP BY BRANDS")])
       ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-12", staticStyle: { "margin-top": "35px" } },
+        [
+          _c(
+            "a",
+            {
+              staticStyle: {
+                padding: "15px",
+                "font-size": "18px",
+                "border-radius": "20px",
+                "font-weight": "500",
+                float: "right"
+              },
+              attrs: { href: "brands" }
+            },
+            [_vm._v("See More")]
+          )
+        ]
+      )
     ])
   }
 ]
