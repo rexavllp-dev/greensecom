@@ -3,6 +3,21 @@
 @section('title', trans('storefront::contact.contact'))
 
 @section('content')
+    <div class="breadcrumbs_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb_content">
+                       <h3 style="color: #fff">Contact Us</h3>
+                        <ul>
+                            <li><a href="{{ route('home') }}">home</a></li>
+                            <li>contact us</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
    <div class="contact_map mt-70">
        <div class="map-area">
@@ -101,7 +116,7 @@
                                     </div>
 
                                     <div class="col-md-18">
-                                        <button type="submit" class="btn btn-lg btn-primary" data-loading>
+                                        <button type="submit" class="btn btn-lg btn-primary" style="background-color: #000;" data-loading>
                                             {{ trans('storefront::contact.send_message') }}
                                         </button>
                                     </div>
