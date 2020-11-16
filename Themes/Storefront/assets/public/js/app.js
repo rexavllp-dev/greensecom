@@ -42123,43 +42123,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -43043,6 +43006,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ProductCard_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../ProductCard.vue */ "./Themes/Storefront/resources/assets/public/js/components/ProductCard.vue");
 /* harmony import */ var _mixins_DynamicTabsMixin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../mixins/DynamicTabsMixin */ "./Themes/Storefront/resources/assets/public/js/mixins/DynamicTabsMixin.js");
 /* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../functions */ "./Themes/Storefront/resources/assets/public/js/functions.js");
+//
+//
 //
 //
 //
@@ -45326,11 +45291,18 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "product-card" }, [
-    _c("div", { staticClass: "product-card-top" }, [
+  return _c("div", { staticClass: "single_product" }, [
+    _c("div", { staticClass: "product_thumb" }, [
+      _c("a", { staticClass: "primary_img", attrs: { href: _vm.productUrl } }, [
+        _c("img", {
+          class: { "image-placeholder": !_vm.hasBaseImage },
+          attrs: { src: _vm.baseImage, alt: "product image" }
+        })
+      ]),
+      _vm._v(" "),
       _c(
         "a",
-        { staticClass: "product-image", attrs: { href: _vm.productUrl } },
+        { staticClass: "secondary_img", attrs: { href: _vm.productUrl } },
         [
           _c("img", {
             class: { "image-placeholder": !_vm.hasBaseImage },
@@ -45339,134 +45311,97 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "product-card-actions" }, [
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-wishlist",
-            class: { added: _vm.inWishlist },
-            attrs: { title: _vm.$trans("storefront::product_card.wishlist") },
-            on: { click: _vm.syncWishlist }
-          },
-          [
-            _c("i", {
-              staticClass: "la-heart",
-              class: _vm.inWishlist ? "las" : "lar"
-            })
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-compare",
-            class: { added: _vm.inCompareList },
-            attrs: { title: _vm.$trans("storefront::product_card.compare") },
-            on: { click: _vm.syncCompareList }
-          },
-          [_c("i", { staticClass: "las la-random" })]
-        )
-      ]),
+      _c("div", { staticClass: "label_product" }),
       _vm._v(" "),
-      _c("ul", { staticClass: "list-inline product-badge" }, [
-        _vm.product.is_out_of_stock
-          ? _c("li", { staticClass: "badge badge-danger" }, [
-              _vm._v(
-                "\n                " +
-                  _vm._s(_vm.$trans("storefront::product_card.out_of_stock")) +
-                  "\n            "
-              )
-            ])
-          : _vm.product.is_new
-          ? _c("li", { staticClass: "badge badge-primary" }, [
-              _vm._v(
-                "\n                " +
-                  _vm._s(_vm.$trans("storefront::product_card.new")) +
-                  "\n            "
-              )
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        _vm.product.has_percentage_special_price
-          ? _c("li", { staticClass: "badge badge-success" }, [
-              _vm._v(
-                "\n                -" +
-                  _vm._s(_vm.product.special_price_percent) +
-                  "%\n            "
-              )
-            ])
-          : _vm._e()
+      _c("div", { staticClass: "action_links" }, [
+        _c("ul", [
+          _c("li", { staticClass: "add_to_cart" }, [
+            _vm.hasNoOption || _vm.product.is_out_of_stock
+              ? _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-primary btn-add-to-cart",
+                    class: { "btn-loading": _vm.addingToCart },
+                    attrs: {
+                      disabled: _vm.product.is_out_of_stock,
+                      title: "",
+                      "data-original-title": "Add to cart"
+                    },
+                    on: { click: _vm.addToCart }
+                  },
+                  [_c("span", { staticClass: "lnr lnr-cart" })]
+                )
+              : _vm._e()
+          ]),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _c("li", { staticClass: "wishlist" }, [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-wishlist",
+                class: { added: _vm.inWishlist },
+                attrs: {
+                  title: "",
+                  "data-original-title": "Add to Wishlist",
+                  title: _vm.$trans("storefront::product_card.wishlist")
+                },
+                on: { click: _vm.syncWishlist }
+              },
+              [_c("span", { staticClass: "lnr lnr-heart" })]
+            )
+          ])
+        ])
       ])
     ]),
     _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "product-card-middle" },
-      [
-        _c("ProductRating", {
-          attrs: {
-            ratingPercent: _vm.product.rating_percent,
-            reviewCount: _vm.product.reviews.length
-          }
-        }),
-        _vm._v(" "),
-        _c(
-          "a",
-          { staticClass: "product-name", attrs: { href: _vm.productUrl } },
-          [_c("h6", [_vm._v(_vm._s(_vm.product.name))])]
-        ),
-        _vm._v(" "),
-        _c("div", {
-          staticClass: "product-price product-price-clone",
+    _c("div", { staticClass: "product_content grid_content" }, [
+      _c("h4", { staticClass: "product_name" }, [
+        _c("a", { attrs: { href: _vm.productUrl } }, [
+          _vm._v(_vm._s(_vm.product.name))
+        ])
+      ]),
+      _vm._v(" "),
+      _vm._m(1),
+      _vm._v(" "),
+      _c("div", { staticClass: "price_box" }, [
+        _c("span", {
+          staticClass: "current_price",
           domProps: { innerHTML: _vm._s(_vm.product.formatted_price) }
         })
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _c("div", { staticClass: "product-card-bottom" }, [
-      _c("div", {
-        staticClass: "product-price",
-        domProps: { innerHTML: _vm._s(_vm.product.formatted_price) }
-      }),
-      _vm._v(" "),
-      _vm.hasNoOption || _vm.product.is_out_of_stock
-        ? _c(
-            "button",
-            {
-              staticClass: "btn btn-primary btn-add-to-cart",
-              class: { "btn-loading": _vm.addingToCart },
-              attrs: { disabled: _vm.product.is_out_of_stock },
-              on: { click: _vm.addToCart }
-            },
-            [
-              _c("i", { staticClass: "las la-cart-arrow-down" }),
-              _vm._v(
-                "\n            " +
-                  _vm._s(_vm.$trans("storefront::product_card.add_to_cart")) +
-                  "\n        "
-              )
-            ]
-          )
-        : _c(
-            "a",
-            {
-              staticClass: "btn btn-primary btn-add-to-cart",
-              attrs: { href: _vm.productUrl }
-            },
-            [
-              _c("i", { staticClass: "las la-eye" }),
-              _vm._v(
-                "\n            " +
-                  _vm._s(_vm.$trans("storefront::product_card.view_options")) +
-                  "\n        "
-              )
-            ]
-          )
+      ])
     ])
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("li", { staticClass: "quick_button" }, [
+      _c(
+        "a",
+        {
+          attrs: {
+            href: "#",
+            "data-toggle": "modal",
+            "data-target": "#modal_box",
+            title: "",
+            "data-original-title": "quick view"
+          }
+        },
+        [_c("span", { staticClass: "lnr lnr-magnifier" })]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("p", [_c("a", { attrs: { href: "#" } })])
+  }
+]
 render._withStripped = true
 
 
@@ -46575,53 +46510,56 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "section",
-    { staticClass: "landscape-tab-products-wrap clearfix" },
-    [
-      _c(
-        "div",
-        { staticClass: "container" },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "tab-content landscape-left-tab-products" },
-            _vm._l(_vm.products, function(product) {
-              return _c("ProductCard", {
-                key: product.id,
-                attrs: { product: product }
-              })
-            }),
-            1
-          ),
-          _vm._v(" "),
-          _vm._l(_vm.data, function(tabLabel, index) {
-            return _c("dynamic-tab", {
-              key: index,
-              attrs: {
-                label: tabLabel,
-                url: _vm.route("storefront.tab_products.index", {
-                  sectionNumber: 1,
-                  tabNumber: index + 1
+  return _c("div", { staticClass: "product_area mb-65" }, [
+    _c("div", { staticClass: "container" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "product_container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12" }, [
+            _c(
+              "div",
+              { staticClass: "product_carousel product_column5 owl-carousel" },
+              [
+                _vm._l(_vm.products, function(product) {
+                  return _c("ProductCard", {
+                    key: product.id,
+                    attrs: { product: product }
+                  })
+                }),
+                _vm._v(" "),
+                _vm._l(_vm.data, function(tabLabel, index) {
+                  return _c("dynamic-tab", {
+                    key: index,
+                    attrs: {
+                      label: tabLabel,
+                      url: _vm.route("storefront.tab_products.index", {
+                        sectionNumber: 1,
+                        tabNumber: index + 1
+                      })
+                    }
+                  })
                 })
-              }
-            })
-          })
-        ],
-        2
-      )
-    ]
-  )
+              ],
+              2
+            )
+          ])
+        ])
+      ])
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "section_title" }, [
-      _c("h2", { staticClass: "head-stripe" }, [_vm._v("TRENDING NOW")])
+    return _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-12" }, [
+        _c("div", { staticClass: "section_title" }, [
+          _c("h2", { staticClass: "head-stripe" }, [_vm._v("TRENDING NOW")])
+        ])
+      ])
     ])
   }
 ]

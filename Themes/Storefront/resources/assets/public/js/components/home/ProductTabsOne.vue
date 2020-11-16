@@ -1,37 +1,39 @@
 <template>
-    <section class="landscape-tab-products-wrap clearfix">
+      <div class="product_area mb-65">
         <div class="container">
-
+            <div class="row">
+                <div class="col-12">
                      <div class="section_title">
-                        <h2 class="head-stripe">TRENDING NOW</h2>
-
+                                <h2 class="head-stripe">TRENDING NOW</h2>
+                            </div>
+                </div>
             </div> 
-<!--             <div class="tab-products-header clearfix">
-                <ul class="tabs float-left">
-                    <li
-                        v-for="(tab, index) in tabs"
-                        :key="index"
-                        :class="classes(tab)"
-                        @click="change(tab)"
-                    >
-                        {{ tab.label }}
-                    </li>
-                </ul>
-            </div> -->
+             <div class="product_container">  
+               <div class="row">
+                   <div class="col-12">
+                        <div class="product_carousel product_column5 owl-carousel">
 
-            <div class="tab-content landscape-left-tab-products">
-                <ProductCard v-for="product in products" :key="product.id" :product="product"/>
-            </div>
-
-            <dynamic-tab
+                            
+                         
+                              <ProductCard v-for="product in products" :key="product.id" :product="product"/>
+                           
+                      
+                       
+                         <dynamic-tab
                 v-for="(tabLabel, index) in data"
                 :key="index"
                 :label="tabLabel"
                 :url="route('storefront.tab_products.index', { sectionNumber: 1, tabNumber: index + 1 })"
             >
             </dynamic-tab>
-        </div>
-    </section>
+                   
+                      
+                        </div>
+                    </div>
+                </div>        
+            </div>  
+        </div> 
+    </div>
 </template>
 
 <script>
